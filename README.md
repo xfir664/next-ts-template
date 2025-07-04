@@ -1,0 +1,1 @@
+# vite-next-ts-template
