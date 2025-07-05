@@ -1,0 +1,65 @@
+@use "@/app/scss/var.scss" as var;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: var.$desktop-width;
+  background-color: var(--bg-base);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: var.$breakpoint-desktop) {
+    padding: 0;
+  }
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.error {
+  color: #ff5757;
+}
+
+.grid-column-full {
+  grid-column: 1 / -1;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}

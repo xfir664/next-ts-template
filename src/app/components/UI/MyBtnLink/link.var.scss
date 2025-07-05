@@ -1,0 +1,134 @@
+@use "./../variables.scss" as var;
+
+$size-base-mob: 16px;
+$size-base-tablet: 16px;
+$size-base-desktop: 40px;
+
+$height-base-mob: 21px;
+$height-base-tablet: 21px;
+$height-base-desktop: 40px;
+
+$size-primary-mob: 16px;
+$size-primary-tablet: 16px;
+$size-primary-desktop: 23px;
+
+$height-primary-mob: 21px;
+$height-primary-tablet: 21px;
+$height-primary-desktop: 23px;
+
+$size-secondary-mob: 16px;
+$size-secondary-tablet: 16px;
+$size-secondary-desktop: 33px;
+
+$height-secondary-mob: 21px;
+$height-secondary-tablet: 21px;
+$height-secondary-desktop: 33px;
+
+$col-base: #000000;
+$col-base-hover: rgba(#756157, 1);
+$col-base-focus: rgba(#756157, 1);
+$col-base-click: rgba(#756157, 0.3);
+$col-base-disabled: rgba($col-base, 0.3);
+
+$col-base--active: #ad1212;
+$col-base-hover--active: rgba(#756157, 1);
+$col-base-focus--active: rgba(#756157, 1);
+$col-base-click--active: rgba(#756157, 0.3);
+$col-base-disabled--active: rgba($col-base--active, 0.3);
+
+$col-primary: #9f2020;
+$col-primary-hover: rgba($col-primary, 1);
+$col-primary-focus: rgba($col-primary, 1);
+$col-primary-click: rgba($col-primary, 0.3);
+$col-primary-disabled: rgba($col-primary, 1);
+
+$col-primary--active: #815252;
+$col-primary-hover--active: rgba($col-primary--active, 1);
+$col-primary-focus--active: rgba($col-primary--active, 1);
+$col-primary-click--active: rgba($col-primary--active, 0.3);
+$col-primary-disabled--active: rgba($col-primary--active, 1);
+
+$col-secondary: #11afa5;
+$col-secondary-hover: rgba($col-secondary, 1);
+$col-secondary-focus: rgba($col-secondary, 1);
+$col-secondary-click: rgba($col-secondary, 0.3);
+$col-secondary-disabled: rgba($col-secondary, 1);
+
+$col-secondary--active: #310c80;
+$col-secondary-hover--active: rgba($col-secondary--active, 1);
+$col-secondary-focus--active: rgba($col-secondary--active, 1);
+$col-secondary-click--active: rgba($col-secondary--active, 0.3);
+$col-secondary-disabled--active: rgba($col-secondary--active, 1);
+
+$bg-base: transparent;
+$bg-base-hover: $bg-base;
+$bg-base-focus: $bg-base;
+$bg-base-click: $bg-base;
+$bg-base-disabled: $bg-base;
+
+$bg-base--active: transparent;
+$bg-base-hover--active: $bg-base--active;
+$bg-base-focus--active: $bg-base--active;
+$bg-base-click--active: $bg-base--active;
+$bg-base-disabled--active: $bg-base--active;
+
+$bg-primary: transparent;
+$bg-primary-hover: $bg-primary;
+$bg-primary-focus: $bg-primary;
+$bg-primary-click: $bg-primary;
+$bg-primary-disabled: $bg-primary;
+
+$bg-primary--active: transparent;
+$bg-primary-hover--active: $bg-primary--active;
+$bg-primary-focus--active: $bg-primary--active;
+$bg-primary-click--active: $bg-primary--active;
+$bg-primary-disabled--active: $bg-primary--active;
+
+$bg-secondary: transparent;
+$bg-secondary-hover: $bg-secondary;
+$bg-secondary-focus: $bg-secondary;
+$bg-secondary-click: $bg-secondary;
+$bg-secondary-disabled: $bg-secondary;
+
+$bg-secondary--active: transparent;
+$bg-secondary-hover--active: $bg-secondary--active;
+$bg-secondary-focus--active: $bg-secondary--active;
+$bg-secondary-click--active: $bg-secondary--active;
+$bg-secondary-disabled--active: $bg-secondary--active;
+
+:root {
+  --link-size--base: #{$size-base-mob};
+  --link-height--base: #{$height-base-mob};
+
+  --link-size--primary: #{$size-primary-mob};
+  --link-height--primary: #{$height-primary-mob};
+
+  --link-size--secondary: #{$size-secondary-mob};
+  --link-height--secondary: #{$height-secondary-mob};
+}
+
+@media (min-width: var.$tablet-width) {
+  :root {
+    --link-size--base: #{$size-base-tablet};
+    --link-height--base: #{$height-base-tablet};
+
+    --link-size--primary: #{$size-primary-tablet};
+    --link-height--primary: #{$height-primary-tablet};
+
+    --link-size--secondary: #{$size-secondary-tablet};
+    --link-height--secondary: #{$height-secondary-tablet};
+  }
+}
+
+@media (min-width: var.$desktop-width) {
+  :root {
+    --link-size--base: #{$size-base-desktop};
+    --link-height--base: #{$height-base-desktop};
+
+    --link-size--primary: #{$size-primary-desktop};
+    --link-height--primary: #{$height-primary-desktop};
+
+    --link-size--secondary: #{$size-secondary-desktop};
+    --link-height--secondary: #{$height-secondary-desktop};
+  }
+}

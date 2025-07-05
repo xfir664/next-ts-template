@@ -1,0 +1,170 @@
+@use "./link.var.scss" as link;
+
+.link {
+  transition: all ease-in-out 0.3s;
+
+  &--base {
+    font-size: var(--link-size--base);
+    line-height: var(--link-height--base);
+    background-color: link.$bg-base;
+    color: link.$col-base;
+    text-decoration: none;
+
+    &:hover {
+      background-color: link.$bg-base-hover;
+      color: link.$col-base-hover;
+    }
+
+    &:focus {
+      background-color: link.$bg-base-focus;
+      color: link.$col-base-focus;
+    }
+
+    &:active {
+      background-color: link.$bg-base-click;
+      color: link.$col-base-click;
+    }
+
+    &.disabled,
+    &.active.disabled {
+      background-color: link.$bg-base-disabled;
+      color: link.$col-base-disabled;
+    }
+
+    &.active {
+      background-color: link.$bg-base--active;
+      color: link.$col-base--active;
+
+      &:hover {
+        background-color: link.$bg-base-hover--active;
+        color: link.$col-base-hover--active;
+      }
+
+      &:focus {
+        background-color: link.$bg-base-focus--active;
+        color: link.$col-base-focus--active;
+      }
+
+      &:active {
+        background-color: link.$bg-base-click--active;
+        color: link.$col-base-click--active;
+      }
+
+      &.disabled,
+      &.active.disabled {
+        background-color: link.$bg-base-disabled;
+        color: link.$col-base-disabled;
+      }
+    }
+  }
+
+  &--primary {
+    font-family: var(--font-base);
+    border-radius: 4px;
+    font-size: var(--link-size--primary);
+    line-height: var(--link-height--primary);
+    background-color: link.$bg-primary;
+    color: link.$col-primary;
+
+    &:hover {
+      background-color: link.$bg-primary-hover;
+      color: link.$col-primary-hover;
+    }
+
+    &:focus {
+      background-color: link.$bg-primary-focus;
+      color: link.$col-primary-focus;
+    }
+
+    &:active {
+      background-color: link.$bg-primary-click;
+      color: link.$col-primary-click;
+    }
+
+    &.disabled,
+    &.active.disabled {
+      background-color: link.$bg-base-disabled;
+      color: link.$col-base-disabled;
+    }
+
+    &.active {
+      background-color: link.$bg-primary--active;
+      color: link.$col-primary--active;
+
+      &:hover {
+        background-color: link.$bg-primary-hover--active;
+        color: link.$col-primary-hover--active;
+      }
+
+      &:focus {
+        background-color: link.$bg-primary-focus--active;
+        color: link.$col-primary-focus--active;
+      }
+
+      &:active {
+        background-color: link.$bg-primary-click--active;
+        color: link.$col-primary-click--active;
+      }
+
+      &.disabled,
+      &.active.disabled {
+        background-color: link.$bg-base-disabled;
+        color: link.$col-base-disabled;
+      }
+    }
+  }
+
+  &--secondary {
+    font-family: var(--font-base);
+    font-size: var(--link-size--secondary);
+    line-height: var(--link-height--secondary);
+    background-color: link.$bg-secondary;
+    color: link.$col-secondary;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: link.$bg-secondary-hover;
+      color: link.$col-secondary-hover;
+    }
+
+    &:focus {
+      background-color: link.$bg-secondary-focus;
+      color: link.$col-secondary-focus;
+    }
+
+    &:active {
+      background-color: link.$bg-secondary-click;
+      color: link.$col-secondary-click;
+    }
+
+    &:disabled {
+      background-color: link.$bg-secondary-disabled;
+      color: link.$col-secondary-disabled;
+    }
+
+    &.active {
+      background-color: link.$bg-secondary--active;
+      color: link.$col-secondary--active;
+
+      &:hover {
+        background-color: link.$bg-secondary-hover--active;
+        color: link.$col-secondary-hover--active;
+      }
+
+      &:focus {
+        background-color: link.$bg-secondary-focus--active;
+        color: link.$col-secondary-focus--active;
+      }
+
+      &:active {
+        background-color: link.$bg-secondary-click--active;
+        color: link.$col-secondary-click--active;
+      }
+
+      &:disabled {
+        background-color: link.$bg-secondary-disabled--active;
+        color: link.$col-secondary-disabled--active;
+      }
+    }
+  }
+}

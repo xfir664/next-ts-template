@@ -1,0 +1,161 @@
+@use "./btn.var.scss" as btn;
+@use "./link.var.scss" as link;
+@use "./navlink.var.scss" as navlink;
+@use "@/styles/var.scss" as var;
+
+.btn-link {
+  transition: all 0.3s ease-in-out;
+
+  &.btn {
+    display: block;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    &.base {
+      padding: 10px;
+      background-color: rebeccapurple;
+    }
+
+    &.primary {
+      padding: 10px;
+      background-color: rgb(38, 204, 57);
+    }
+    &.secondary {
+      padding: 10px;
+      background-color: rgb(210, 118, 37);
+    }
+
+    @media screen and (min-width: var.$breakpoint-tablet) {
+      &.base {
+        padding: 10px;
+        background-color: rebeccapurple;
+      }
+      &.primary {
+        padding: 10px;
+        background-color: rgb(38, 204, 57);
+      }
+      &.secondary {
+        padding: 10px;
+        background-color: rgb(210, 118, 37);
+      }
+    }
+    @media screen and (min-width: var.$breakpoint-desktop) {
+      &.base {
+        padding: 10px;
+        background-color: rebeccapurple;
+      }
+      &.primary {
+        padding: 10px;
+        background-color: rgb(38, 204, 57);
+      }
+      &.secondary {
+        padding: 10px;
+        background-color: rgb(210, 118, 37);
+      }
+    }
+  }
+
+  &.link {
+    display: block;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    &.base {
+      padding: 10px;
+      background-color: rebeccapurple;
+    }
+
+    &.primary {
+      padding: 10px;
+      background-color: rgb(38, 204, 57);
+    }
+    &.secondary {
+      padding: 10px;
+      background-color: rgb(210, 118, 37);
+    }
+
+    @media screen and (min-width: var.$breakpoint-tablet) {
+      &.base {
+        padding: 10px;
+        background-color: rebeccapurple;
+      }
+      &.primary {
+        padding: 10px;
+        background-color: rgb(38, 204, 57);
+      }
+      &.secondary {
+        padding: 10px;
+        background-color: rgb(210, 118, 37);
+      }
+    }
+    @media screen and (min-width: var.$breakpoint-desktop) {
+      &.base {
+        padding: 10px;
+        background-color: rebeccapurple;
+      }
+      &.primary {
+        padding: 10px;
+        background-color: rgb(38, 204, 57);
+      }
+      &.secondary {
+        padding: 10px;
+        background-color: rgb(210, 118, 37);
+      }
+    }
+  }
+
+  &.navlink {
+    display: block;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    &.base {
+      padding: 10px;
+      background-color: rebeccapurple;
+    }
+
+    &.primary {
+      padding: 10px;
+      background-color: rgb(38, 204, 57);
+    }
+    &.secondary {
+      padding: 10px;
+      background-color: rgb(210, 118, 37);
+    }
+
+    @media screen and (min-width: var.$breakpoint-tablet) {
+      &.base {
+        padding: 10px;
+        background-color: rebeccapurple;
+      }
+      &.primary {
+        padding: 10px;
+        background-color: rgb(38, 204, 57);
+      }
+      &.secondary {
+        padding: 10px;
+        background-color: rgb(210, 118, 37);
+      }
+    }
+    @media screen and (min-width: var.$breakpoint-desktop) {
+      &.base {
+        padding: 10px;
+        background-color: rebeccapurple;
+      }
+      &.primary {
+        padding: 10px;
+        background-color: rgb(38, 204, 57);
+      }
+      &.secondary {
+        padding: 10px;
+        background-color: rgb(210, 118, 37);
+      }
+    }
+  }
+}
