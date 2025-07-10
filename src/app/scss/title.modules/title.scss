@@ -1,0 +1,16 @@
+@use "./title.var.scss" as title;
+
+.title {
+  font-size: var(--title-size--base);
+  line-height: var(--title-height--base);
+
+  &--primary {
+    font-size: var(--title-size--primary);
+    line-height: var(--title-height--primary);
+  }
+
+  &--secondary {
+    font-size: var(--title-size--secondary);
+    line-height: var(--title-height--secondary);
+  }
+}

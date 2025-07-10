@@ -1,0 +1,19 @@
+@use "./base-text.var.scss" as base;
+
+.base {
+  font-size: var(--base-size--base);
+  line-height: var(--base-height--base);
+  color: base.$col-base;
+
+  &--primary {
+    font-size: var(--base-size--primary);
+    line-height: var(--base-height--primary);
+    color: base.$col-primary;
+  }
+
+  &--secondary {
+    font-size: var(--base-size--secondary);
+    line-height: var(--base-height--secondary);
+    color: base.$col-secondary;
+  }
+}

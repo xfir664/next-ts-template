@@ -1,0 +1,16 @@
+@use "./subtitle.var.scss" as subtitle;
+
+.subtitle {
+  font-size: var(--subtitle-size--base);
+  line-height: var(--subtitle-height--base);
+
+  &--primary {
+    font-size: var(--subtitle-size--primary);
+    line-height: var(--subtitle-height--primary);
+  }
+
+  &--secondary {
+    font-size: var(--subtitle-size--secondary);
+    line-height: var(--subtitle-height--secondary);
+  }
+}

@@ -1,0 +1,26 @@
+@use "mixsins";
+
+$font-base: "PT Sans";
+$font-primary: "PT Sans";
+$font-secondary: "PT Sans";
+
+@include mixsins.font-face(
+  $font-base,
+  "/Sedona-HTML-Academy/fonts/PTSans/ptsans-regular",
+  400,
+  normal,
+  (woff2 woff ttf)
+);
+@include mixsins.font-face(
+  $font-base,
+  "/Sedona-HTML-Academy/fonts/PTSans/ptsans-bold",
+  700,
+  normal,
+  (woff2 woff ttf)
+);
+
+:root {
+  --font-base: #{$font-base}, "Arial", "sans-serif";
+  --font-primary: #{$font-primary}, "Arial", "sans-serif";
+  --font-secondary: #{$font-secondary}, "Arial", "sans-serif";
+}

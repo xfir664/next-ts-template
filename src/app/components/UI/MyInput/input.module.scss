@@ -1,0 +1,102 @@
+@use "./input.var.scss" as input;
+@use "./checkbox.var.scss" as checkbox;
+@use "./radio.var.scss" as radio;
+
+.input {
+  transition: all ease-in-out 0.3s;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  &.base .input-action {
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--input-size--base);
+    line-height: var(--input-height--base);
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background-color: input.$bg-base;
+    color: input.$col-base;
+
+    &:hover {
+      background-color: input.$bg-base-hover;
+      color: input.$col-base-hover;
+    }
+
+    &:focus {
+      background-color: input.$bg-base-focus;
+      color: input.$col-base-focus;
+    }
+
+    &:active {
+      background-color: input.$bg-base-active;
+      color: input.$col-base-active;
+    }
+
+    &:disabled {
+      background-color: input.$bg-base-disabled;
+      color: input.$col-base-disabled;
+    }
+  }
+
+  &.primary .input-btn {
+    border-radius: 4px;
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--input-size--primary);
+    line-height: var(--input-height--primary);
+    background-color: input.$bg-primary;
+    color: input.$col-primary;
+
+    &:hover {
+      background-color: input.$bg-primary-hover;
+      color: input.$col-primary-hover;
+    }
+
+    &:focus {
+      background-color: input.$bg-primary-focus;
+      color: input.$col-primary-focus;
+    }
+
+    &:active {
+      background-color: input.$bg-primary-active;
+      color: input.$col-primary-active;
+    }
+
+    &:disabled {
+      background-color: input.$bg-primary-disabled;
+      color: input.$col-primary-disabled;
+    }
+  }
+
+  &.secondary .input-btn {
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: var(--input-size--secondary);
+    line-height: var(--input-height--secondary);
+    background-color: input.$bg-secondary;
+    color: input.$col-secondary;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: input.$bg-secondary-hover;
+      color: input.$col-secondary-hover;
+    }
+
+    &:focus {
+      background-color: input.$bg-secondary-focus;
+      color: input.$col-secondary-focus;
+    }
+
+    &:active {
+      background-color: input.$bg-secondary-active;
+      color: input.$col-secondary-active;
+    }
+
+    &:disabled {
+      background-color: input.$bg-secondary-disabled;
+      color: input.$col-secondary-disabled;
+    }
+  }
+}

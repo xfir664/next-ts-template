@@ -1,0 +1,63 @@
+@use "./../variables.scss" as var;
+
+$size-base-mob: 18px;
+$size-primary-mob: 23px;
+$size-secondary-mob: 33px;
+
+$height-base-mob: 21px;
+$height-primary-mob: 34px;
+$height-secondary-mob: 44px;
+
+$size-base-tablet: 18px;
+$size-primary-tablet: 23px;
+$size-secondary-tablet: 33px;
+
+$height-base-tablet: 21px;
+$height-primary-tablet: 23px;
+$height-secondary-tablet: 33px;
+
+$size-base-desktop: 18px;
+$size-primary-desktop: 23px;
+$size-secondary-desktop: 33px;
+
+$height-base-desktop: 21px;
+$height-primary-desktop: 33px;
+$height-secondary-desktop: 44px;
+
+$col-base: #000000;
+$col-primary: #419516;
+$col-secondary: #645519;
+
+:root {
+  --base-size--base: #{$size-base-mob};
+  --base-size--primary: #{$size-primary-mob};
+  --base-size--secondary: #{$size-secondary-mob};
+
+  --base-height--base: #{$height-base-mob};
+  --base-height--primary: #{$height-primary-mob};
+  --base-height--secondary: #{$height-secondary-mob};
+}
+
+@media screen and (min-width: var.$tablet-width) {
+  :root {
+    --base-size--base: #{$size-base-tablet};
+    --base-size--primary: #{$size-primary-tablet};
+    --base-size--secondary: #{$size-secondary-tablet};
+
+    --base-height--base: #{$height-base-tablet};
+    --base-height--primary: #{$height-primary-tablet};
+    --base-height--secondary: #{$height-secondary-tablet};
+  }
+}
+
+@media screen and (min-width: var.$desktop-width) {
+  :root {
+    --base-size--base: #{$size-base-desktop};
+    --base-size--primary: #{$size-primary-desktop};
+    --base-size--secondary: #{$size-secondary-desktop};
+
+    --base-height--base: #{$height-base-desktop};
+    --base-height--primary: #{$height-primary-desktop};
+    --base-height--secondary: #{$height-secondary-desktop};
+  }
+}

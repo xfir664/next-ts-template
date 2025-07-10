@@ -15,17 +15,22 @@ img {
   object-fit: contain;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var.$bg-page;
+  font-size: var.$size-base-mobile;
+  line-height: var.$height-base-mobile;
+
+  @media (min-width: var.$breakpoint-tablet) {
+    font-size: var.$size-base-tablet;
+    line-height: var.$height-base-tablet;
+  }
+
+  @media (min-width: var.$breakpoint-desktop) {
+    font-size: var.$size-base-desktop;
+    line-height: var.$height-base-desktop;
+  }
 }
 
 .container {
@@ -34,13 +39,17 @@ img {
   flex-direction: column;
   margin: 0 auto;
   padding: 0 10px;
-  max-width: var.$desktop-width;
-  background-color: var(--bg-base);
+  max-width: var.$breakpoint-desktop;
+  background-color: var.$bg-base;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
   @media (min-width: var.$breakpoint-desktop) {
     padding: 0;
   }
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .m-0 {
@@ -62,4 +71,17 @@ img {
 
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

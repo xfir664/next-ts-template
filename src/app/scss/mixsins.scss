@@ -1,0 +1,21 @@
+@use "sass:list";
+@mixin font-face(
+  $name,
+  $path,
+  $weight: normal,
+  $style: normal,
+  $exts: (woff2 woff ttf)
+) {
+  $src: ();
+  @each $ext in $exts {
+    $format: if($ext == "ttf", "truetype", $ext);
+    $src: list.append($src, url("#{$path}.#{$ext}") format("#{$format}"), comma);
+  }
+  @font-face {
+    font-family: "#{$name}";
+    src: #{$src};
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
