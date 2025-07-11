@@ -21,6 +21,8 @@ body {
   background-color: var.$bg-page;
   font-size: var.$size-base-mobile;
   line-height: var.$height-base-mobile;
+  color: var.$color-base;
+  font-family: "ptsans", "Arial", sans-serif;
 
   @media (min-width: var.$breakpoint-tablet) {
     font-size: var.$size-base-tablet;

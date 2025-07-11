@@ -1,1 +1,5 @@
-@use "@/app/scss/global.scss" as *;
+@use "@/app/scss/var.scss";
+@use "@/app/scss/mixins.scss";
+@use "@/app/scss/fonts.scss";
+@use "@/app/scss/global.scss";
+@use "@/app/scss/text.modules/text.scss";

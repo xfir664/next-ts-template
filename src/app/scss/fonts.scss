@@ -1,8 +1,13 @@
 @use "mixsins";
+@use "@/app/scss/var.scss" as var;
 
 $font-base: "PT Sans";
 $font-primary: "PT Sans";
 $font-secondary: "PT Sans";
+
+$font-base-src: "./fonts/PTSans/ptsans-regular";
+$font-primary-src: "./fonts/PTSans/ptsans-bold";
+$font-secondary-src: "./fonts/PTSans/ptsans-bold";
 
 @include mixsins.font-face(
   $font-base,
@@ -18,9 +23,3 @@ $font-secondary: "PT Sans";
   normal,
   (woff2 woff ttf)
 );
-
-:root {
-  --font-base: #{$font-base}, "Arial", "sans-serif";
-  --font-primary: #{$font-primary}, "Arial", "sans-serif";
-  --font-secondary: #{$font-secondary}, "Arial", "sans-serif";
-}

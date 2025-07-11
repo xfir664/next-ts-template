@@ -1,0 +1,21 @@
+@use "./text.var.scss" as text;
+
+.text {
+  &.base {
+    font-size: text.$size-base-mob;
+    line-height: text.$height-base-mob;
+    color: text.$col-base;
+  }
+
+  &.primary {
+    font-size: text.$size-primary-mob;
+    line-height: text.$height-primary-mob;
+    color: text.$col-primary;
+  }
+
+  &.secondary {
+    font-size: text.$size-secondary-mob;
+    line-height: text.$height-secondary-mob;
+    color: text.$col-secondary;
+  }
+}
