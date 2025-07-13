@@ -16,13 +16,12 @@ img {
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   background-color: var.$bg-page;
   font-size: var.$size-base-mobile;
   line-height: var.$height-base-mobile;
   color: var.$color-base;
-  font-family: "ptsans", "Arial", sans-serif;
 
   @media (min-width: var.$breakpoint-tablet) {
     font-size: var.$size-base-tablet;
@@ -36,18 +35,8 @@ body {
 }
 
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   padding: 0 10px;
   max-width: var.$breakpoint-desktop;
-  background-color: var.$bg-base;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
-  @media (min-width: var.$breakpoint-desktop) {
-    padding: 0;
-  }
 }
 
 .main {

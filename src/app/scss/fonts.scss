@@ -1,4 +1,4 @@
-@use "mixsins";
+@use "mixins";
 @use "@/app/scss/var.scss" as var;
 
 $font-base: "PT Sans";
@@ -9,17 +9,22 @@ $font-base-src: "./fonts/PTSans/ptsans-regular";
 $font-primary-src: "./fonts/PTSans/ptsans-bold";
 $font-secondary-src: "./fonts/PTSans/ptsans-bold";
 
-@include mixsins.font-face(
+@include mixins.font-face(
   $font-base,
-  "/Sedona-HTML-Academy/fonts/PTSans/ptsans-regular",
   400,
   normal,
-  (woff2 woff ttf)
+  $font-base-src,
+  ("woff2", "woff", "ttf")
 );
-@include mixsins.font-face(
-  $font-base,
-  "/Sedona-HTML-Academy/fonts/PTSans/ptsans-bold",
-  700,
-  normal,
-  (woff2 woff ttf)
-);
+
+.font-base {
+  font-family: $font-base, "Arial", "sans-serif";
+}
+
+.font-primary {
+  font-family: $font-primary, "Arial", "sans-serif";
+}
+
+.font-secondary {
+  font-family: $font-secondary, "Arial", "sans-serif";
+}
