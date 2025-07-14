@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-sprite": "tsx scripts/generate-sprite.js"
+    "generate-sprite": "tsx scripts/generate-sprite.js",
+    "optimize-images": "tsx scripts/optimize-images.js",
+    "convert-fonts": "tsx scripts/convert-fonts.js",
+    "optimize-svg": "tsx scripts/optimize-svg.js",
+    "optimize:allImg": "tsx scripts/optimize-svg.js && tsx scripts/optimize-images.js"
   },
   "dependencies": {
     "next": "15.3.5",
@@ -35,6 +39,8 @@
     "svgo": "^4.0.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
+    "ttf2woff": "^3.0.0",
+    "ttf2woff2": "^8.0.0",
     "typed-scss-modules": "^8.1.1",
     "typescript": "^5.8.3"
   }

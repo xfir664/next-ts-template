@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`page`}>
-        <div className="container">
+        <div className="wrapper">
           <header>header</header>
           {children}
           <footer>footer</footer>
