@@ -1,0 +1,126 @@
+@use "./select.var.scss" as select;
+
+.select {
+  display: block;
+  transition: all ease-in-out 0.3s;
+
+  &.base {
+    color: select.$col-base;
+
+    &:hover {
+      color: select.$col-base-hover;
+    }
+
+    &:focus {
+      color: select.$col-base-focus;
+    }
+
+    &:active {
+      color: select.$col-base-click;
+    }
+
+    &.disabled {
+      color: select.$col-base-disabled;
+    }
+
+    &.active {
+      color: select.$col-base--active;
+
+      &:hover {
+        color: select.$col-base-hover--active;
+      }
+
+      &:focus {
+        color: select.$col-base-focus--active;
+      }
+
+      &:active {
+        color: select.$col-base-click--active;
+      }
+
+      &.disabled {
+        color: select.$col-base-disabled--active;
+      }
+    }
+  }
+
+  &.primary {
+    color: select.$col-primary;
+
+    &:hover {
+      color: select.$col-primary-hover;
+    }
+
+    &:focus {
+      color: select.$col-primary-focus;
+    }
+
+    &:active {
+      color: select.$col-primary-click;
+    }
+
+    &.disabled {
+      color: select.$col-primary-disabled;
+    }
+
+    &.active {
+      color: select.$col-primary--active;
+
+      &:hover {
+        color: select.$col-primary-hover--active;
+      }
+
+      &:focus {
+        color: select.$col-primary-focus--active;
+      }
+
+      &:active {
+        color: select.$col-primary-click--active;
+      }
+
+      &.disabled {
+        color: select.$col-primary-disabled--active;
+      }
+    }
+  }
+
+  &.secondary {
+    color: select.$col-secondary;
+
+    &:hover {
+      color: select.$col-secondary-hover;
+    }
+
+    &:focus {
+      color: select.$col-secondary-focus;
+    }
+
+    &:active {
+      color: select.$col-secondary-click;
+    }
+
+    &.disabled {
+      color: select.$col-secondary-disabled;
+    }
+
+    &.active {
+      color: select.$col-secondary--active;
+
+      &:hover {
+        color: select.$col-secondary-hover--active;
+      }
+
+      &:focus {
+        color: select.$col-secondary-focus--active;
+      }
+
+      &:active {
+        color: select.$col-secondary-click--active;
+      }
+
+      &.disabled {
+        color: select.$col-secondary-disabled--active;
+      }
+    }
+  }
+}

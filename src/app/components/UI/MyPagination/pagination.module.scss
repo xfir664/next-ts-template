@@ -1,0 +1,126 @@
+@use "./pagination.var.scss" as pagination;
+
+.pagination {
+  display: block;
+  transition: all ease-in-out 0.3s;
+
+  &.base {
+    color: pagination.$col-base;
+
+    &:hover {
+      color: pagination.$col-base-hover;
+    }
+
+    &:focus {
+      color: pagination.$col-base-focus;
+    }
+
+    &:active {
+      color: pagination.$col-base-click;
+    }
+
+    &.disabled {
+      color: pagination.$col-base-disabled;
+    }
+
+    &.active {
+      color: pagination.$col-base--active;
+
+      &:hover {
+        color: pagination.$col-base-hover--active;
+      }
+
+      &:focus {
+        color: pagination.$col-base-focus--active;
+      }
+
+      &:active {
+        color: pagination.$col-base-click--active;
+      }
+
+      &.disabled {
+        color: pagination.$col-base-disabled--active;
+      }
+    }
+  }
+
+  &.primary {
+    color: pagination.$col-primary;
+
+    &:hover {
+      color: pagination.$col-primary-hover;
+    }
+
+    &:focus {
+      color: pagination.$col-primary-focus;
+    }
+
+    &:active {
+      color: pagination.$col-primary-click;
+    }
+
+    &.disabled {
+      color: pagination.$col-primary-disabled;
+    }
+
+    &.active {
+      color: pagination.$col-primary--active;
+
+      &:hover {
+        color: pagination.$col-primary-hover--active;
+      }
+
+      &:focus {
+        color: pagination.$col-primary-focus--active;
+      }
+
+      &:active {
+        color: pagination.$col-primary-click--active;
+      }
+
+      &.disabled {
+        color: pagination.$col-primary-disabled--active;
+      }
+    }
+  }
+
+  &.secondary {
+    color: pagination.$col-secondary;
+
+    &:hover {
+      color: pagination.$col-secondary-hover;
+    }
+
+    &:focus {
+      color: pagination.$col-secondary-focus;
+    }
+
+    &:active {
+      color: pagination.$col-secondary-click;
+    }
+
+    &.disabled {
+      color: pagination.$col-secondary-disabled;
+    }
+
+    &.active {
+      color: pagination.$col-secondary--active;
+
+      &:hover {
+        color: pagination.$col-secondary-hover--active;
+      }
+
+      &:focus {
+        color: pagination.$col-secondary-focus--active;
+      }
+
+      &:active {
+        color: pagination.$col-secondary-click--active;
+      }
+
+      &.disabled {
+        color: pagination.$col-secondary-disabled--active;
+      }
+    }
+  }
+}
