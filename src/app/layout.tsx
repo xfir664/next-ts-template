@@ -1,6 +1,8 @@
 import "@/app/scss/index.scss";
 
 import type { Metadata } from "next";
+import Footer from "@/app/Layout/Footer/Footer";
+import Header from "@/app/Layout/Header/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,9 +18,9 @@ export default function RootLayout({
     <html lang="ru">
       <body className={`page`}>
         <div className="wrapper">
-          <header>header</header>
+          <Header />
           {children}
-          <footer>footer</footer>
+          <Footer />
         </div>
       </body>
     </html>
