@@ -59,15 +59,19 @@ async function generateSprite() {
           "convertStyleToAttrs",
           "convertColors",
           "convertPathData",
-          // НЕ удаляем viewBox
         ],
       });
 
-      // Извлекаем содержимое SVG (без тегов <svg>)
+      // Извлекаем содержимое SVG и viewBox
       const svgMatch = result.data.match(/<svg[^>]*>(.*)<\/svg>/s);
       if (svgMatch) {
         const innerContent = svgMatch[1];
-        spriteContent += `  <symbol id="${fileName}" viewBox="0 0 24 24">${innerContent}</symbol>\n`;
+
+        // Извлекаем viewBox из оригинального SVG
+        const viewBoxMatch = result.data.match(/viewBox="([^"]*)"/);
+        const viewBox = viewBoxMatch ? viewBoxMatch[1] : "0 0 24 24";
+
+        spriteContent += `  <symbol id="${fileName}" viewBox="${viewBox}">${innerContent}</symbol>\n`;
       } else {
         console.warn(`⚠️ Не удалось извлечь содержимое из ${fileName}`);
       }
